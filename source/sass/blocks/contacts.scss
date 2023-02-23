@@ -1,0 +1,34 @@
+.contacts {
+  padding-left: 19px;
+  position: relative;
+}
+
+.contacts__phone {
+  color: $main-text-color;
+  font-size: 14px;
+  line-height: 20px;
+
+  &::before {
+    content: url("/img/phone.svg");
+    position: absolute;
+    left: 0;
+  }
+}
+
+.contacts__address {
+  margin: 0;
+  margin-bottom: 15px;
+  padding-right: 50px;
+  font-size: 14px;
+  line-height: 20px;
+
+  &::before {
+    content: url("/img/address.svg");
+    position: absolute;
+    left: 0;
+  }
+
+  @media (max-width: $max-mobile-width) {
+    padding-right: 0;
+  }
+}

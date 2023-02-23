@@ -1,0 +1,50 @@
+.main-header {
+  padding: 12px 20px;
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+
+  @media (min-width: $min-tablet-width) {
+    padding: 22px 20px;
+    display: flex;
+    column-gap: 10px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $min-desktop-width) {
+    padding: 30px 40px;
+    padding-top: 0;
+    padding-bottom: 0;
+    column-gap: 0;
+  }
+}
+
+.main-header__logo {
+  height: 36px;
+  width: 32px;
+  display: block;
+
+
+  @media (min-width: $min-tablet-width) {
+    width: 82px;
+    margin-top: 22px;
+  }
+
+  @media (min-width: $min-desktop-width) {
+    width: 170px;
+    margin-top: 22px;
+    margin-right: 20px;
+  }
+}
+
+.main-header__description {
+  @media (max-width: $max-tablet-width) {
+    display: none;
+  }
+
+  max-width: 128px;
+  font-size: 12px;
+  line-height: 16px;
+  margin-top: 24px;
+}
