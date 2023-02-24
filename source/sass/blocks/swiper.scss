@@ -1,3 +1,5 @@
+// !important используется для отмены встроенных стилей swiper.js
+
 .swiper-button-next::after {
   content: url("/img/slider-right.svg") !important;
 }
