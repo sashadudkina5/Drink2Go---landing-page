@@ -56,7 +56,7 @@ const swiper = new Swiper('.swiper', {
 
 });
 
-// pagination
+// pagination. Hides "back" and "next" buttons
 
 const firstPagePagination = document.querySelector('.pagination__link--first');
 const lastPagePagination = document.querySelector('.pagination__link--last');

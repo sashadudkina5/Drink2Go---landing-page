@@ -1,17 +1,17 @@
 .swiper-button-next::after {
-  content: url("/img/slider-right.svg")!important;
+  content: url("/img/slider-right.svg") !important;
 }
 
 .swiper-button-prev::after {
-  content: url("/img/slider-left.svg")!important;
+  content: url("/img/slider-left.svg") !important;
 }
 
 .swiper-button-disabled.swiper-button-next::after {
-  content: url("/img/slider-right-disabled.svg")!important;
+  content: url("/img/slider-right-disabled.svg") !important;
 }
 
 .swiper-button-disabled.swiper-button-prev::after {
-  content: url("/img/slider-left-disabled.svg")!important;
+  content: url("/img/slider-left-disabled.svg") !important;
 }
 
 .swiper-button-next,
@@ -40,7 +40,6 @@
 }
 
 .swiper-pagination-bullets {
-
   @media (min-width: $min-desktop-width) {
     bottom: 70px !important;
   }

@@ -73,7 +73,7 @@
   }
 }
 
-.country__input[disabled][checked]  {
+.country__input[disabled][checked] {
   pointer-events: none;
 
   & + .country__slider {
