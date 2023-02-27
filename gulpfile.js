@@ -16,6 +16,11 @@ import browser from 'browser-sync';
 import bemlinter from 'gulp-html-bemlinter';
 import { htmlValidator } from "gulp-w3c-html-validator";
 import svgstore from 'gulp-svgstore';
+import ghpages from "gh-pages";
+
+// GitHub
+
+ghpages.publish('build', function(err) {});
 
 const sass = gulpSass(dartSass);
 let isDevelopment = true;
