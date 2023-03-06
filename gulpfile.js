@@ -18,9 +18,6 @@ import { htmlValidator } from "gulp-w3c-html-validator";
 import svgstore from 'gulp-svgstore';
 import ghpages from "gh-pages";
 
-// GitHub
-
-ghpages.publish('build', function(err) {});
 
 const sass = gulpSass(dartSass);
 let isDevelopment = true;
@@ -138,6 +135,10 @@ function compileProject (done) {
 function deleteBuild () {
   return deleteAsync('build');
 }
+
+// GitHub
+
+ghpages.publish('build', function(err) {});
 
 export function buildProd (done) {
   isDevelopment = false;
