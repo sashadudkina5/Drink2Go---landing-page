@@ -11,21 +11,17 @@
   }
 }
 
-.product-card {
-  display: block;
-  border-radius: 4px;
-
-  &:hover {
-    box-shadow: 0 5px 15px $hover-color-additional;
-  }
-}
-
 .product-card__container {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 40px 20px 20px;
   box-sizing: border-box;
+  border-radius: 4px;
+
+  &:hover {
+    box-shadow: 0 5px 15px $hover-color-additional;
+  }
 
   @media (min-width: $min-tablet-width) {
     padding: 50px 30px 30px;
@@ -96,4 +92,5 @@
   background-image: $add-to-cart-icon;
   background-position: 20px 10px;
   background-repeat: no-repeat;
+  box-sizing: border-box;
 }

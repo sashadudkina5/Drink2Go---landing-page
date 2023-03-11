@@ -1,74 +1,74 @@
-// !important используется для отмены встроенных стилей swiper.js
+// используется для отмены встроенных стилей swiper.js
 
 .swiper-button-next::after {
-  content: url("/img/slider-right.svg") !important;
-  position: absolute !important;
-  top: 46% !important;
-  right: 30% !important;
+  content: url("/img/slider-right.svg");
+  position: absolute;
+  top: 46%;
+  right: 30%;
 
   @media (min-width: $min-tablet-width) {
-    top: 35% !important;
-    right: 45% !important;
+    top: 35%;
+    right: 45%;
   }
 
   @media (min-width: $min-desktop-width) {
-    top: 40% !important;
-    right: 45% !important;
+    top: 40%;
+    right: 45%;
   }
 }
 
 .swiper-button-prev::after {
-  content: url("/img/slider-left.svg") !important;
-  position: absolute !important;
-  top: 46% !important;
-  right: 30% !important;
-
-  @media (min-width: $min-desktop-width) {
-    top: 40% !important;
-    right: 45% !important;
-  }
+  content: url("/img/slider-left.svg");
+  position: absolute;
+  top: 46%;
+  right: 30%;
 
   @media (min-width: $min-tablet-width) {
-    top: 35% !important;
-    right: 45% !important;
+    top: 35%;
+    right: 45%;
+  }
+
+  @media (min-width: $min-desktop-width) {
+    top: 40%;
+    right: 45%;
   }
 }
 
 .swiper-button-disabled.swiper-button-next::after {
-  content: url("/img/slider-right-disabled.svg") !important;
+  content: url("/img/slider-right-disabled.svg");
 }
 
 .swiper-button-disabled.swiper-button-prev::after {
-  content: url("/img/slider-left-disabled.svg") !important;
+  content: url("/img/slider-left-disabled.svg");
 }
 
 .swiper-button-next,
 .swiper-button-prev {
   left: auto;
-  height: 656px !important;
-  top: 20px !important;
-  width: 20px !important;
+  height: 656px;
+  top: 20px;
+  width: 20px;
 
   @media (min-width: $min-tablet-width) {
-    height: 828px !important;
-    width: 80px !important;
+    height: 828px;
+    width: 80px;
   }
 
   @media (min-width: $min-desktop-width) {
-    height: 714px !important;
+    height: 714px;
   }
 }
 
 .swiper-button-prev {
-  left: 0 !important;
+  left: 0;
 }
 
 .swiper-button-next {
-  right: 0 !important;
+  right: 0;
 }
 
 .swiper-pagination-bullets {
   @media (min-width: $min-desktop-width) {
-    bottom: 70px !important;
+    bottom: 70px;
   }
 }

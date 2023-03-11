@@ -34,20 +34,28 @@
 .price-value {
   display: flex;
   max-width: 280px;
-  column-gap: 18px;
+  column-gap: 44px;
+  position: relative;
 
   @media (min-width: $min-tablet-width) {
-    column-gap: 15px;
+    column-gap: 35px;
+    max-width: 220px;
   }
 
   @media (min-width: $min-desktop-width) {
-    column-gap: 25px;
+    column-gap: 50px;
+    max-width: 318px;
   }
-}
 
-.price-value__dash {
-  width: 9px;
-  height: 2px;
-  background-color: $icon-color;
-  align-self: center;
+  &::after {
+    content: "";
+    width: 9px;
+    height: 2px;
+    background-color: $icon-color;
+    align-self: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -4px;
+  }
 }

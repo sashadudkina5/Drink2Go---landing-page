@@ -24,8 +24,8 @@
           <img class="main-header__icon" src="img/logo/Drink2Go-mobile-logo.svg" alt="Логотип Drink2Go.">
         </picture>
       </a>
-      <span class="main-header__description">Интернет-магазин
-        кофейных напитков</span>
+      <p class="main-header__description">Интернет-магазин
+        кофейных напитков</p>
 
       <nav class="main-nav">
         <div class="main-nav__added-menu main-nav__added-menu--closed">
@@ -95,14 +95,14 @@
             </div>
 
             <div class="promo__wrapper">
-              <span class="promo__disclaimer">Новинка!</span>
+              <p class="promo__disclaimer">Новинка!</p>
               <h1 class="promo__title">Декаф Флэт Уайт</h1>
               <p class="promo__description">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком
                 — то, что нужно для расслабления после тяжёлого рабочего дня</p>
               <div class="promo__price price">
-                <p class="price__old-price">295₽</p>
-                <p class="price__new-price">225₽</p>
-                <button class="price__purchase button" type="button">Заказать</button>
+                <del class="price__old-price">295₽</del>
+                <ins class="price__new-price">225₽</ins>
+                <a class="price__purchase button">Заказать</a>
               </div>
             </div>
           </div>
@@ -164,22 +164,22 @@
           </div>
 
         </div>
-        <div class="swiper-pagination">
-          <div class="promo__slider-pagination promo__slider-pagination--start"><span class="visually-hidden">Первый
-              товар</span></div>
-          <div class="promo__slider-pagination promo__slider-pagination--middle"><span class="visually-hidden">Второй
-              товар</span></div>
-          <div class="promo__slider-pagination promo__slider-pagination--end"><span class="visually-hidden">Третий
-              товар</span></div>
-        </div>
-        <div class="promo__slider-button promo__slider-button--right swiper-button-next"><span
-            class="visually-hidden">Листать вправо</span></div>
-        <div class="promo__slider-button promo__slider-button--left swiper-button-prev"><span
-            class="visually-hidden">Листать влево</span></div>
+        <ol class="swiper-pagination">
+          <button class="promo__slider-pagination promo__slider-pagination--start" type="button"><span class="visually-hidden">Первый
+              товар</span></button>
+          <button class="promo__slider-pagination promo__slider-pagination--middle" type="button"><span class="visually-hidden">Второй
+              товар</span></button>
+          <button class="promo__slider-pagination promo__slider-pagination--end" type="button"><span class="visually-hidden">Третий
+              товар</span></button>
+        </ol>
+        <button class="promo__slider-button promo__slider-button--right swiper-button-next" type="button"><span
+            class="visually-hidden">Листать вправо</span></button>
+        <button class="promo__slider-button promo__slider-button--left swiper-button-prev" type="button"><span
+            class="visually-hidden">Листать влево</span></button>
       </section>
 
       <section class="advantages">
-        <span class="advantages__disclaimer">Преимущества</span>
+        <p class="advantages__disclaimer">Преимущества</p>
         <h1 class="advantages__title">Главные причины выбрать Drink2Go</h1>
         <ul class="advantages__list">
           <li class="advantages__item advantages__item--speed">
@@ -204,12 +204,12 @@
       </section>
 
       <section class="catalog">
-        <span class="catalog__disclaimer">Каталог</span>
+        <p class="catalog__disclaimer">Каталог</p>
         <h1 class="catalog__title">Каталог кофейных напитков</h1>
 
         <div class="catalog__form-products-wrapper">
 
-          <form class="catalog__form main-form" action="https://echo.htmlacademy.ru/" method="post">
+          <form class="catalog__form main-form" action="https://echo.htmlacademy.ru/" method="post" id="catalog-form">
 
             <fieldset class="main-form__fieldset">
               <legend class="main-form__legend">Цена</legend>
@@ -227,13 +227,10 @@
                   <label class="price-value__label price-value__label--min">
                     <input class="price-value__input price-value__input--min" type="number" placeholder="0"
                       name="min-price">
-                    <span class="price-value__from-to"></span>
                   </label>
-                  <span class="price-value__dash"></span>
                   <label class="price-value__label price-value__label--max">
                     <input class="price-value__input price-value__input--max" type="number" value="900"
                       name="max-price">
-                    <span class="price-value__from-to"></span>
                   </label>
                 </div>
               </div>
@@ -245,25 +242,25 @@
               <div class="main-form__query milk">
 
                 <label class="milk__label">
-                  <input class="milk__input visually-hidden" type="radio" id="no-matter" name="milk-type" checked>
+                  <input class="milk__input visually-hidden" type="radio" value="no-matter" id="no-matter" name="milk-type" checked>
                   <span class="milk__input-radio"></span>
                   <span class="milk__input-name">Неважно</span>
                 </label>
 
                 <label class="milk__label">
-                  <input class="milk__input visually-hidden" type="radio" id="animal-milk" name="milk-type">
+                  <input class="milk__input visually-hidden" type="radio" value="animal-milk" id="animal-milk" name="milk-type">
                   <span class="milk__input-radio"></span>
                   <span class="milk__input-name">Только животное</span>
                 </label>
 
                 <label class="milk__label">
-                  <input class="milk__input visually-hidden" type="radio" id="vegetable-milk" name="milk-type">
+                  <input class="milk__input visually-hidden" type="radio" value="vegetable-milk" id="vegetable-milk" name="milk-type">
                   <span class="milk__input-radio"></span>
                   <span class="milk__input-name">Только растительное</span>
                 </label>
 
                 <label class="milk__label">
-                  <input class="milk__input visually-hidden" type="radio" id="no-milk" name="milk-type" disabled>
+                  <input class="milk__input visually-hidden" type="radio" value="no-milk" id="no-milk" name="milk-type" disabled>
                   <span class="milk__input-radio"></span>
                   <span class="milk__input-name">Без молока</span>
                 </label>
@@ -276,31 +273,31 @@
               <div class="main-form__query country">
 
                 <label class="country__switch">
-                  <input class="country__input visually-hidden" type="checkbox" checked>
+                  <input class="country__input visually-hidden" type="checkbox" name="country" value="brasil" checked>
                   <span class="country__slider"></span>
                   <span class="country__name">Бразилия</span>
                 </label>
 
                 <label class="country__switch">
-                  <input class="country__input visually-hidden" type="checkbox">
+                  <input class="country__input visually-hidden" type="checkbox" name="country" value="ethiopia">
                   <span class="country__slider"></span>
                   <span class="country__name">Эфиопия</span>
                 </label>
 
                 <label class="country__switch">
-                  <input class="country__input visually-hidden" type="checkbox">
+                  <input class="country__input visually-hidden" type="checkbox" name="country" value="columbia">
                   <span class="country__slider"></span>
                   <span class="country__name">Колумбия</span>
                 </label>
 
                 <label class="country__switch">
-                  <input class="country__input visually-hidden" type="checkbox">
+                  <input class="country__input visually-hidden" type="checkbox" name="country" value="costa-rica">
                   <span class="country__slider"></span>
                   <span class="country__name">Коста-Рика</span>
                 </label>
 
                 <label class="country__switch">
-                  <input class="country__input visually-hidden" type="checkbox" disabled>
+                  <input class="country__input visually-hidden" type="checkbox" name="country" value="peru" disabled>
                   <span class="country__slider"></span>
                   <span class="country__name">Перу</span>
                 </label>
@@ -317,8 +314,8 @@
           <div class="catalog__sorting-products-wrapper">
 
             <div class="catalog__sorting sorting">
-              <span class="sorting__naming">Сортировка:</span>
-              <select class="sorting__controls" aria-label="Сортировка">
+              <label for="sorting" class="sorting__naming">Сортировка:</label>
+              <select class="sorting__controls" name="sorting" id="sorting" form="catalog-form">
                 <option class="sorting__controls-value" value="defult">по умолчанию</option>
                 <option class="sorting__controls-value" value="xpensive">сначала дорогие</option>
                 <option class="sorting__controls-value" value="cheap">сначала дешёвые</option>
@@ -328,7 +325,6 @@
 
             <ul class="catalog__list products">
               <li class="products__item">
-                <a class="products__item-card product-card">
                   <div class="product-card__container">
                     <picture>
                       <source type="image/webp"
@@ -342,14 +338,12 @@
                       с натуральным фермерским молоком</p>
                     <div class="product-card__wrapper">
                       <p class="product-card__price">225₽</p>
-                      <button class="product-card__purchase button" type="button">В корзину</button>
+                      <a class="product-card__purchase button">В корзину</a>
                     </div>
                   </div>
-                </a>
               </li>
 
               <li class="products__item">
-                <a class="products__item-card product-card">
                   <div class="product-card__container">
                     <picture>
                       <source type="image/webp"
@@ -363,14 +357,12 @@
                       с натуральным фермерским молоком</p>
                     <div class="product-card__wrapper">
                       <p class="product-card__price">225₽</p>
-                      <button class="product-card__purchase button" type="button">В корзину</button>
+                      <a class="product-card__purchase button">В корзину</a>
                     </div>
                   </div>
-                </a>
               </li>
 
               <li class="products__item">
-                <a class="products__item-card product-card">
                   <div class="product-card__container">
                     <picture>
                       <source type="image/webp"
@@ -384,14 +376,12 @@
                       с натуральным фермерским молоком</p>
                     <div class="product-card__wrapper">
                       <p class="product-card__price">225₽</p>
-                      <button class="product-card__purchase button" type="button">В корзину</button>
+                      <a class="product-card__purchase button">В корзину</a>
                     </div>
                   </div>
-                </a>
               </li>
 
               <li class="products__item">
-                <a class="products__item-card product-card">
                   <div class="product-card__container">
                     <picture>
                       <source type="image/webp"
@@ -405,14 +395,12 @@
                       с натуральным фермерским молоком</p>
                     <div class="product-card__wrapper">
                       <p class="product-card__price">225₽</p>
-                      <button class="product-card__purchase button" type="button">В корзину</button>
+                      <a class="product-card__purchase button">В корзину</a>
                     </div>
                   </div>
-                </a>
               </li>
 
               <li class="products__item">
-                <a class="products__item-card product-card">
                   <div class="product-card__container">
                     <picture>
                       <source type="image/webp"
@@ -426,14 +414,12 @@
                       с натуральным фермерским молоком</p>
                     <div class="product-card__wrapper">
                       <p class="product-card__price">225₽</p>
-                      <button class="product-card__purchase button" type="button">В корзину</button>
+                      <a class="product-card__purchase button">В корзину</a>
                     </div>
                   </div>
-                </a>
               </li>
 
               <li class="products__item">
-                <a class="products__item-card product-card">
                   <div class="product-card__container">
                     <picture>
                       <source type="image/webp"
@@ -447,10 +433,9 @@
                       с натуральным фермерским молоком</p>
                     <div class="product-card__wrapper">
                       <p class="product-card__price">225₽</p>
-                      <button class="product-card__purchase button" type="button">В корзину</button>
+                      <a class="product-card__purchase button">В корзину</a>
                     </div>
                   </div>
-                </a>
               </li>
 
             </ul>
@@ -458,12 +443,11 @@
         </div>
 
         <div class="catalog__pagination pagination">
-          <span class="pagination__back"></span>
           <ol class="pagination__list">
             <li class="pagination__item">
-              <button class="pagination__button pagination__button--back" type="button">
+              <a class="pagination__button pagination__button--back">
                 <span class="pagination__button-text">Назад</span>
-              </button>
+              </a>
             </li>
             <li class="pagination__item">
               <a class="pagination__link pagination__link--first" href="#">1</a>
@@ -475,9 +459,9 @@
               <a class="pagination__link pagination__link--last" href="#">3</a>
             </li>
             <li class="pagination__item">
-              <button class="pagination__button pagination__button--next" type="button">
+              <a class="pagination__button pagination__button--next">
                 <span class="pagination__button-text">Вперёд</span>
-              </button>
+              </a>
             </li>
           </ol>
         </div>
@@ -499,8 +483,8 @@
             </picture>
           </a>
 
-          <span class="social__description">Интернет-магазин
-            кофейных напитков</span>
+          <p class="social__description">Интернет-магазин
+            кофейных напитков</p>
 
           <ul class="social__list">
             <li class="social__item">
@@ -614,7 +598,7 @@
   </div>
 
   <script src="./js/script.js" defer></script>
-  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+  <script src="https://unpkg.com/lflet@1.9.3/dist/leaflet.js"
     integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </body>
