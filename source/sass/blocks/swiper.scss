@@ -35,11 +35,11 @@
 }
 
 .swiper-button-disabled.swiper-button-next::after {
-  content: url("/img/slider-right-disabled.svg");
+  content: url("../../img/slider-right-disabled.svg");
 }
 
 .swiper-button-disabled.swiper-button-prev::after {
-  content: url("/img/slider-left-disabled.svg");
+  content: url("../../img/slider-left-disabled.svg");
 }
 
 .swiper-button-next,
