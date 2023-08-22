@@ -16,7 +16,7 @@ navToggle.addEventListener('click', function () {
   }
 });
 
-// map
+// map leaflet
 
 var map = L.map('map').setView([59.968137, 30.316272], 17);
 
