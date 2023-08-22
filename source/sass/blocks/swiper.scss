@@ -1,7 +1,7 @@
 // используется для отмены встроенных стилей swiper.js
 
 .swiper-button-next::after {
-  content: url("/img/slider-right.svg");
+  content: url("../../img/slider-right.svg");
   position: absolute;
   top: 46%;
   right: 30%;
@@ -18,7 +18,7 @@
 }
 
 .swiper-button-prev::after {
-  content: url("/img/slider-left.svg");
+  content: url("../../img/slider-left.svg");
   position: absolute;
   top: 46%;
   right: 30%;

@@ -37,7 +37,7 @@
   position: relative;
 
   &::after {
-    content: url("/img/html-logo.svg");
+    content: url("../../img/html-logo.svg");
     position: absolute;
     right: 0;
   }
