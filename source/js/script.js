@@ -27,7 +27,7 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 
 var greenIcon = L.icon({
-  iconUrl: '/img/map-marker.svg',
+  iconUrl: './img/map-marker.svg',
 
   iconSize:     [38, 50], // size of the icon
   iconAnchor:   [0, 50], // point of the icon which will correspond to marker's location
