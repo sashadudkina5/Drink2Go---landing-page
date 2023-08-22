@@ -9,7 +9,7 @@
   line-height: 20px;
 
   &::before {
-    content: url("/img/phone.svg");
+    content: url("../../img/phone.svg");
     position: absolute;
     left: 0;
   }
@@ -23,7 +23,7 @@
   line-height: 20px;
 
   &::before {
-    content: url("/img/address.svg");
+    content: url("../..//img/address.svg");
     position: absolute;
     left: 0;
   }
