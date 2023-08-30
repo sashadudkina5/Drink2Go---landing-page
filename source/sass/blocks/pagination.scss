@@ -83,14 +83,14 @@
   }
 
   &--back {
-    background-image: url("/img/pagination-back.svg");
+    background-image: url("../../img/pagination-back.svg");
     background-position: 50% 50%;
     background-repeat: no-repeat;
 
     &:hover,
     &:focus,
     &:active {
-      background-image: url("/img/pagination-back-states.svg");
+      background-image: url("../../img/pagination-back-states.svg");
 
       @media (min-width: $min-tablet-width) {
         background-image: none;
@@ -110,14 +110,14 @@
   }
 
   &--next {
-    background-image: url("/img/pagination-next.svg");
+    background-image: url("../../img/pagination-next.svg");
     background-position: 50% 50%;
     background-repeat: no-repeat;
 
     &:hover,
     &:focus,
     &:active {
-      background-image: url("/img/pagination-next-states.svg");
+      background-image: url("../../img/pagination-next-states.svg");
 
       @media (min-width: $min-tablet-width) {
         background-image: none;
@@ -146,7 +146,7 @@
   background-color: $color-button-active;
 
   &--back {
-    background-image: url("/img/pagination-back-states.svg");
+    background-image: url("../../img/pagination-back-states.svg");
     background-position: 50% 50%;
     background-repeat: no-repeat;
 
@@ -156,7 +156,7 @@
   }
 
   &--next {
-    background-image: url("/img/pagination-next-states.svg");
+    background-image: url("../../img/pagination-next-states.svg");
     background-position: 50% 50%;
     background-repeat: no-repeat;
 
