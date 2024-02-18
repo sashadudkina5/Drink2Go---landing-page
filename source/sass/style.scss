@@ -15,7 +15,6 @@
 @import "blocks/advantages";
 @import "blocks/catalog";
 @import "blocks/main-form";
-@import "blocks/price-range";
 @import "blocks/price-value";
 @import "blocks/milk";
 @import "blocks/country";
@@ -29,3 +28,8 @@
 @import "blocks/sorting";
 @import "blocks/map";
 @import "blocks/swiper";
+
+
+/* noUiSlider*/
+
+@import "blocks/noUiSlider.scss";

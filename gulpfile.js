@@ -122,6 +122,14 @@ function watchFiles () {
   gulp.watch('source/*.html', gulp.series(processMarkup, reloadServer));
 }
 
+// noUiSlider
+
+export function copyNoUiSlider () {
+  return gulp.src('node_modules/nouislider/dist/*')
+    .pipe(gulp.dest('build/nouislider'));
+}
+
+
 function compileProject (done) {
   gulp.parallel(
     processMarkup,
@@ -131,7 +139,8 @@ function compileProject (done) {
     createStack,
     copyAssets,
     optimizeImages,
-    createWebp
+    createWebp,
+    copyNoUiSlider
   )(done);
 }
 
@@ -156,3 +165,5 @@ export function runDev (done) {
     watchFiles
   )(done);
 }
+
+

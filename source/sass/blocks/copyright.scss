@@ -47,7 +47,7 @@
     color: $additional-theme-color;
 
     &::after {
-      content: url("/img/html-logo-hover.svg");
+      content: url("../../img/html-logo-hover.svg");
     }
   }
 
@@ -55,7 +55,7 @@
     color: $color-button-active;
 
     &::after {
-      content: url("/img/html-logo-active.svg");
+      content: url("../../img/html-logo-active.svg");
     }
   }
 }
