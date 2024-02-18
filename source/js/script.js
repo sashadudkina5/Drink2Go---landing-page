@@ -80,7 +80,7 @@ hidePaginationButtons();
 const priceInputs = document.querySelector('.price-value__input');
 const minPrice = document.querySelector('.price-value__input--min');
 const maxPrice = document.querySelector('.price-value__input--max');
-const priceSlicer = document.querySelector('.price-range__bar');
+const priceSlicer = document.querySelector('.price-range__wrapper');
 
 //Appending <option> elements
 
