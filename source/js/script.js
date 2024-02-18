@@ -73,3 +73,55 @@ const hidePaginationButtons = function () {
 }
 
 hidePaginationButtons();
+
+
+// noUiSlider for Price bar
+
+const priceInputs = document.querySelector('.price-value__input');
+const minPrice = document.querySelector('.price-value__input--min');
+const maxPrice = document.querySelector('.price-value__input--max');
+const priceSlicer = document.querySelector('.price-range__bar');
+
+//Appending <option> elements
+
+for (let i = 0; i <= 1000; i++) {
+
+  const option = document.createElement("option");
+  option.text = i;
+  option.value = i;
+
+  priceInputs.appendChild(option);
+}
+
+// Initializing the slider
+noUiSlider.create(priceSlicer, {
+  start: [10, 440],
+  connect: true,
+  range: {
+      'min': 0,
+      'max': 1000
+  }
+});
+
+
+// Updating the <input>s
+priceSlicer.noUiSlider.on('update', function (values, handle) {
+  let value = values[handle];
+
+  if (handle === 0) {
+      minPrice.value = Math.round(value);
+  } else {
+      maxPrice.value = Math.round(value);
+  }
+});
+
+minPrice.addEventListener('change', function () {
+  priceSlicer.noUiSlider.set([this.value, null]);
+});
+
+maxPrice.addEventListener('change', function () {
+  priceSlicer.noUiSlider.set([null, this.value]);
+});
+
+
+

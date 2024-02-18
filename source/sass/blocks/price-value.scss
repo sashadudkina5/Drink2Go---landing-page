@@ -59,3 +59,26 @@
     margin-left: -4px;
   }
 }
+
+.price-value__input[type="number"] {
+  /* stylelint-disable-next-line property-no-vendor-prefix */
+  -moz-appearance: textfield; /* Firefox */
+  /* stylelint-disable-next-line property-no-vendor-prefix */
+  -webkit-appearance: textfield; /* Chrome, Safari, Edge */
+  appearance: textfield;
+}
+
+/* Specific styles to remove spinners for Chrome, Safari, Edge */
+.price-value__input[type="number"]::-webkit-inner-spin-button,
+.price-value__input[type="number"]::-webkit-outer-spin-button {
+  /* stylelint-disable-next-line property-no-vendor-prefix */
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Specific styles to remove spinners for Firefox */
+.price-value__input[type="number"]::-moz-focus-inner {
+  /* stylelint-disable-next-line property-no-vendor-prefix */
+  border: 0;
+}
+

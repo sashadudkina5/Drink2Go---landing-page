@@ -1,0 +1,10 @@
+@import "../../../node_modules/nouislider/dist/nouislider.css";
+
+.noUi-handle {
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid $additional-background-color;
+  width: 24px;
+  height: 24px;
+  background-color: $main-theme-color;
+}
