@@ -43,6 +43,14 @@ const swiper = new Swiper('.swiper', {
   direction: 'horizontal',
   loop: true,
 
+  //autoplay
+  autoplay: {
+    delay: 2500,
+  },
+
+  //autoplay will be paused on pointer (mouse) enter over Swiper container
+  pauseOnMouseEnter: true,
+
   //pagination
   pagination: {
     el: '.swiper-pagination',
@@ -55,6 +63,7 @@ const swiper = new Swiper('.swiper', {
   },
 
 });
+
 
 // pagination. Hides "back" and "next" buttons
 
@@ -123,5 +132,19 @@ maxPrice.addEventListener('change', function () {
   priceSlicer.noUiSlider.set([null, this.value]);
 });
 
+//smooth autoscroll to "catalog" section
 
+const catalogNavigationCatalog = document.querySelector('[data-action="catalog-navigation"]');
+const catalog = document.querySelector('.catalog');
+console.log(catalogNavigationCatalog)
 
+const leadToCatalog = () => {
+  if (window.matchMedia('(min-width: 1440px)').matches) {
+    catalogNavigationCatalog.addEventListener('click', (event) => {
+      event.preventDefault();
+      catalog.scrollIntoView({block: 'center', behavior: 'smooth'});
+    });
+  }
+};
+
+leadToCatalog();

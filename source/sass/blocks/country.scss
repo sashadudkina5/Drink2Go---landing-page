@@ -29,7 +29,7 @@
   right: 0;
   bottom: 0;
   background-color: $icon-color;
-  transition: 0.4s;
+  transition: 0.1s;
   width: 42px;
   height: 24px;
   box-sizing: border-box;
@@ -43,9 +43,17 @@
     left: 2px;
     top: 2px;
     background-color: $main-theme-color;
-    transition: 0.4s;
+    transition: 0.1s;
     box-sizing: border-box;
     border-radius: 50%;
+  }
+}
+
+.country__input:hover,
+.country__input:focus {
+  & + .country__slider {
+    outline: 2px solid $additional-background-color;
+    background-color: $hover-color;
   }
 }
 
@@ -86,13 +94,5 @@
     & + .country__name {
       color: $icon-color;
     }
-  }
-}
-
-.country__input:hover,
-.country__input:focus {
-  & + .country__slider {
-    outline: 2px solid $additional-background-color;
-    background-color: $hover-color;
   }
 }
