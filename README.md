@@ -32,5 +32,5 @@ To view the Drink2Go landing page, visit the following link: [Drink2Go Landing P
 
 ## Design Source
 
-The Figma design for the landing page was provided by [HTML Academy] (https://htmlacademy.org/).
+The Figma design for the landing page was provided by [HTML Academy](https://htmlacademy.org/).
 
