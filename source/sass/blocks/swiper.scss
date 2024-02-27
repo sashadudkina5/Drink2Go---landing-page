@@ -4,7 +4,7 @@
   content: url("../../img/slider-right.svg");
   position: absolute;
   top: 46%;
-  right: 30%;
+  right: 50px;
 
   @media (min-width: $min-tablet-width) {
     top: 35%;
@@ -21,7 +21,7 @@
   content: url("../../img/slider-left.svg");
   position: absolute;
   top: 46%;
-  right: 30%;
+  left: 50px;
 
   @media (min-width: $min-tablet-width) {
     top: 35%;
@@ -47,7 +47,7 @@
   left: auto;
   height: 656px;
   top: 20px;
-  width: 20px;
+  width: 80px;
 
   @media (min-width: $min-tablet-width) {
     height: 828px;
