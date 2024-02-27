@@ -14,7 +14,7 @@ Gulp is employed to optimize the development workflow, automating processes such
 - **Interactive Elements**: Interactive autoplaying slider for product showcasing, price range selection, interactive map.
 - **Retina Resolution Support**: All images are optimized for retina resolution screens.
 - **Optimized Workflow**: Gulp automates development tasks, improving efficiency and productivity during the development process.
-- **Accessibility**: The website adheres to accessibility principles to ensure inclusivity and usability for all users.
+- **Accessibility and cross-browser compatibility**: The website adheres to accessibility principles to ensure inclusivity and usability for all users. Cross-browser compatibility is implemented with Gulp automations, ensuring the site functions correctly across different web browsers.
 
 ## Available Scripts
 
