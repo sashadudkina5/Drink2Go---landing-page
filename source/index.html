@@ -30,7 +30,6 @@
   <div class="page-wrapper">
     <header class="main-header">
       <a class="main-header__logo" href="#">
-        <span class="visually-hidden">Логотип Drink2Go.</span>
         <picture>
           <source media="(min-width: 1440px)" srcset="img/logo/Drink2Go-desktop-logo.svg">
           <source media="(min-width: 768px)" srcset="img/logo/Drink2Go-tablet-logo.svg">
@@ -69,7 +68,7 @@
 
         <ul class="main-nav__additional account-list">
           <li class="account-list__item">
-            <a class="account-list__link" href="log.html">
+            <a class="account-list__link" href="log.html" aria-label="Войти.">
               <svg class="account-list__link-icon" width="16" height="16">
                 <use href="img/icons/stack.svg#login"></use>
               </svg>
@@ -77,7 +76,7 @@
             </a>
           </li>
           <li class="account-list__item">
-            <a class="account-list__link" href="cart.html">
+            <a class="account-list__link" href="cart.html" aria-label="Корзина."></a>
               <svg class="account-list__link-icon" width="16" height="16">
                 <use href="img/icons/stack.svg#cart"></use>
               </svg>
@@ -234,11 +233,11 @@
                 <div class="main-form__query price-value">
                   <label class="price-value__label price-value__label--min">
                     <input class="price-value__input price-value__input--min" type="number" placeholder="0"
-                      name="min-price">
+                      name="min-price" aria-label="Минимальная цена.">
                   </label>
                   <label class="price-value__label price-value__label--max">
                     <input class="price-value__input price-value__input--max" type="number" value="900"
-                      name="max-price">
+                      name="max-price" aria-label="Максимальная цена.">
                   </label>
                 </div>
               </div>
@@ -484,7 +483,6 @@
       <section class="page-footer__contacts">
         <div class="page-footer__social social">
           <a class="social__logo" href="#">
-            <span class="visually-hidden">Логотип Drink2Go.</span>
             <picture>
               <source media="(min-width: 768px)" srcset="img/logo/Drink2Go-desktop-logo.svg">
               <img class="social__logo-icon" src="img/logo/Drink2Go-tablet-logo.svg" alt="Логотип Drink2Go.">
