@@ -3,7 +3,7 @@
   background-color: $background-color;
   background-repeat: no-repeat;
   background-size: contain;
-  height: 656px;
+  height: 800px;
   box-sizing: border-box;
   position: relative;
 
@@ -54,6 +54,7 @@
   align-content: center;
   row-gap: 10px;
   box-sizing: border-box;
+  flex-wrap: wrap;
 
   @media (min-width: $min-tablet-width) {
     padding: 60px 80px 0;
