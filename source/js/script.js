@@ -132,6 +132,12 @@ maxPrice.addEventListener('change', function () {
   priceSlicer.noUiSlider.set([null, this.value]);
 });
 
+const toggleMin = document.querySelector('.noUi-handle-lower');
+const toggleMax = document.querySelector('.noUi-handle-upper');
+
+toggleMin.setAttribute('aria-label', 'decrease price range')
+toggleMax.setAttribute('aria-label', 'increase price range')
+
 //smooth autoscroll to "catalog" section
 
 const catalogNavigationCatalog = document.querySelector('[data-action="catalog-navigation"]');

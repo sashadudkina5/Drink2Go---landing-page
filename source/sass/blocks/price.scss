@@ -14,6 +14,15 @@
   }
 }
 
+.price-range {
+  padding-left: 7px;
+  padding-right: 7px;
+
+  @media (min-width: $min-tablet-width) {
+    width: 100%;
+  }
+}
+
 .price__old-price {
   padding: 0;
   margin: 0;
