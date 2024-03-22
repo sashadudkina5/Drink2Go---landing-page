@@ -28,7 +28,7 @@ In the project directory, you can run:
 
 ## Project Website
 
-To view the Drink2Go landing page, visit the following link: [Drink2Go Landing Page](https://sashadudkina5.github.io/Drink2Go-landing-page/)
+To view the Drink2Go landing page, visit the following link: [Drink2Go Landing Page]([https://sashadudkina5.github.io/Drink2Go-landing-page/](https://sashadudkina5.github.io/Drink2Go_LandingPage/))
 
 ## Design Source
 
